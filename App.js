@@ -1,6 +1,5 @@
-import React from 'react';
-import Historia4 from  './frontend/Historia4'; 
-
+import React from "react";
+import Historia4 from "./frontend/Historia4";
 
 const App = () => {
   return <Historia4 />;

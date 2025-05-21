@@ -1,15 +1,33 @@
-import React from "react";
+import React from 'react';
+import { StyleSheet, View } from 'react-native';
+import MapView from 'react-native-maps';
 
-
-const historia4 = () => {
+const Historia4 = () => {
   return (
-    <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-      <Text style={{ fontSize: 24, fontWeight: "bold" }}>Historia 4</Text>
-      <Text style={{ marginTop: 20 }}>
-        Esta es la historia número 4. Aquí puedes agregar el contenido de la
-        historia.
-      </Text>
+    <View style={styles.container}>
+      <MapView
+        style={styles.map}
+        initialRegion={{
+          latitude: 4.6561,        
+          longitude: -74.0596,
+          latitudeDelta: 0.01,
+          longitudeDelta: 0.01,
+        }}
+        showsUserLocation={true}   
+        zoomEnabled={true}         
+        scrollEnabled={true}      
+      />
     </View>
   );
-}
-export default historia4;
+};
+
+export default Historia4;
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+  map: {
+    flex: 1,
+  },
+});
