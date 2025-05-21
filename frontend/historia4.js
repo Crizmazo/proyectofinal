@@ -20,7 +20,6 @@ const Historia4 = () => {
     </View>
   );
 };
-
 export default Historia4;
 
 const styles = StyleSheet.create({
